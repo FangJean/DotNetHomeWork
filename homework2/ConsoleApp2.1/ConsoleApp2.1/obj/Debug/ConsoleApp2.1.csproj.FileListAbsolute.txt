@@ -1,0 +1,7 @@
+D:\WHU\大二下\C#\homework2\ConsoleApp2.1\ConsoleApp2.1\bin\Debug\ConsoleApp2.1.exe.config
+D:\WHU\大二下\C#\homework2\ConsoleApp2.1\ConsoleApp2.1\bin\Debug\ConsoleApp2.1.exe
+D:\WHU\大二下\C#\homework2\ConsoleApp2.1\ConsoleApp2.1\bin\Debug\ConsoleApp2.1.pdb
+D:\WHU\大二下\C#\homework2\ConsoleApp2.1\ConsoleApp2.1\obj\Debug\ConsoleApp2.1.csprojAssemblyReference.cache
+D:\WHU\大二下\C#\homework2\ConsoleApp2.1\ConsoleApp2.1\obj\Debug\ConsoleApp2.1.csproj.CoreCompileInputs.cache
+D:\WHU\大二下\C#\homework2\ConsoleApp2.1\ConsoleApp2.1\obj\Debug\ConsoleApp2.1.exe
+D:\WHU\大二下\C#\homework2\ConsoleApp2.1\ConsoleApp2.1\obj\Debug\ConsoleApp2.1.pdb
