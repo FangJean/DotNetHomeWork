@@ -7,3 +7,4 @@ D:\WHU\大二下\C#\homework9\homework9\obj\Debug\homework9.csproj.GenerateResou
 D:\WHU\大二下\C#\homework9\homework9\obj\Debug\homework9.csproj.CoreCompileInputs.cache
 D:\WHU\大二下\C#\homework9\homework9\obj\Debug\homework9.exe
 D:\WHU\大二下\C#\homework9\homework9\obj\Debug\homework9.pdb
+D:\WHU\大二下\C#\homework9\homework9\obj\Debug\homework9.csprojAssemblyReference.cache

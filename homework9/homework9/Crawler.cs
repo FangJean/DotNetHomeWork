@@ -20,30 +20,38 @@ namespace homework9
         public int MaxPage { get; set; }
         public string FileFilter { get; set; }
         public string HostFilter { get; set; }
-        public string startUrl { get; set; }
+        public string StartUrl { get; set; }
         public static readonly string urlDetectRegex = @"(href|HREF)[]*=[]*[""'](?<url>[^""'#>]+)[""']";
         public static readonly string urlParseRegex = @"^(?<site>https?://(?<host>[\w.-]+)(:\d+)?($|/))(\w+/)*(?<file>[^#?]*)";
         public void Crawl()
         {
             MaxPage = 20;
             urls.Clear();
-            urls.Add(startUrl, false);
+            urls.Add(StartUrl, false);
             //Console.WriteLine("开始爬行了");
             while (count<MaxPage)
             {
                 string current = null;
-                foreach (string url in urls.Keys)
+                try
                 {
-                    if ((bool)urls[url]) continue;
-                    current = url;
+                    foreach (string url in urls.Keys)
+                    {
+                        if ((bool)urls[url]) continue;
+                        current = url;
+                    }
+                    if (current == null) break;
+                    PageDownloaded(this, current, "success");
+                    //Console.WriteLine("爬行" + current + "页面！");
+                    string html = DownLoad(current);
+                    urls[current] = true;
+                    count++;
+                    Parse(html, current);
+                }catch(Exception ex)
+                {
+                    PageDownloaded(this, current, "Error");
                 }
-                if (current == null) break;
-                //Console.WriteLine("爬行" + current + "页面！");
-                string html = DownLoad(current);
-                urls[current] = true;
-                count++;
-                Parse(html,current);
             }
+            CrawlerStopped(this);
             //Console.WriteLine("爬行结束");
         }
 

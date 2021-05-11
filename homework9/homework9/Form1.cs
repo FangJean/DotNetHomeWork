@@ -50,7 +50,13 @@ namespace homework9
         }
         private void buttonStart_Click(object sender, EventArgs e)
         {
-            myCrawler.startUrl = textBoxURL.Text;
+            rbs.Clear();
+            myCrawler.StartUrl = textBoxURL.Text;
+            Match match = Regex.Match(myCrawler.StartUrl, Crawler.urlParseRegex);
+            if (match.Length == 0) return;
+            string host = match.Groups["host"].Value;
+            myCrawler.HostFilter = "^" + host + "$";
+            myCrawler.FileFilter = "((.html?|.aspx|.jsp|.php)$|^[^.]+$)";
             new Thread(myCrawler.Crawl).Start();
             lblInfo.Text = "爬虫已启动";
         }

@@ -30,11 +30,14 @@ namespace homework9
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.lblInfo = new System.Windows.Forms.Label();
             this.buttonStart = new System.Windows.Forms.Button();
             this.textBoxURL = new System.Windows.Forms.TextBox();
-            this.dgvResult = new System.Windows.Forms.DataGridView();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.lblInfo = new System.Windows.Forms.Label();
+            this.dgvResult = new System.Windows.Forms.DataGridView();
+            this.index = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.URL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -59,9 +62,17 @@ namespace homework9
             // 
             this.splitContainer1.Panel2.Controls.Add(this.statusStrip1);
             this.splitContainer1.Panel2.Controls.Add(this.dgvResult);
-            this.splitContainer1.Size = new System.Drawing.Size(800, 450);
-            this.splitContainer1.SplitterDistance = 106;
+            this.splitContainer1.Size = new System.Drawing.Size(928, 478);
+            this.splitContainer1.SplitterDistance = 112;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // lblInfo
+            // 
+            this.lblInfo.AutoSize = true;
+            this.lblInfo.Location = new System.Drawing.Point(12, 69);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(0, 15);
+            this.lblInfo.TabIndex = 2;
             // 
             // buttonStart
             // 
@@ -81,38 +92,58 @@ namespace homework9
             this.textBoxURL.TabIndex = 0;
             this.textBoxURL.Text = "http://www.coblogs.com/dstang2000/";
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 340);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(928, 22);
+            this.statusStrip1.TabIndex = 1;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
             // dgvResult
             // 
             this.dgvResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResult.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.index,
+            this.URL,
+            this.status});
             this.dgvResult.Location = new System.Drawing.Point(6, 5);
             this.dgvResult.Name = "dgvResult";
             this.dgvResult.RowHeadersWidth = 51;
             this.dgvResult.RowTemplate.Height = 27;
-            this.dgvResult.Size = new System.Drawing.Size(793, 334);
+            this.dgvResult.Size = new System.Drawing.Size(919, 334);
             this.dgvResult.TabIndex = 0;
             // 
-            // statusStrip1
+            // index
             // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 318);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
-            this.statusStrip1.TabIndex = 1;
-            this.statusStrip1.Text = "statusStrip1";
+            this.index.DataPropertyName = "Index";
+            this.index.HeaderText = "序号";
+            this.index.MinimumWidth = 6;
+            this.index.Name = "index";
+            this.index.Width = 125;
             // 
-            // lblInfo
+            // URL
             // 
-            this.lblInfo.AutoSize = true;
-            this.lblInfo.Location = new System.Drawing.Point(12, 69);
-            this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(0, 15);
-            this.lblInfo.TabIndex = 2;
+            this.URL.DataPropertyName = "URL";
+            this.URL.HeaderText = "URL";
+            this.URL.MinimumWidth = 6;
+            this.URL.Name = "URL";
+            this.URL.Width = 325;
+            // 
+            // status
+            // 
+            this.status.DataPropertyName = "Status";
+            this.status.HeaderText = "状态";
+            this.status.MinimumWidth = 6;
+            this.status.Name = "status";
+            this.status.Width = 125;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(928, 478);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -135,6 +166,9 @@ namespace homework9
         private System.Windows.Forms.DataGridView dgvResult;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.Label lblInfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn index;
+        private System.Windows.Forms.DataGridViewTextBoxColumn URL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn status;
     }
 }
 
