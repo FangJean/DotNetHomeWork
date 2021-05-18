@@ -1,0 +1,10 @@
+D:\WHU\大二下\C#\homework10\homework10\bin\Debug\homework10.exe.config
+D:\WHU\大二下\C#\homework10\homework10\bin\Debug\homework10.exe
+D:\WHU\大二下\C#\homework10\homework10\bin\Debug\homework10.pdb
+D:\WHU\大二下\C#\homework10\homework10\obj\Debug\homework10.csprojAssemblyReference.cache
+D:\WHU\大二下\C#\homework10\homework10\obj\Debug\homework10.Form1.resources
+D:\WHU\大二下\C#\homework10\homework10\obj\Debug\homework10.Properties.Resources.resources
+D:\WHU\大二下\C#\homework10\homework10\obj\Debug\homework10.csproj.GenerateResource.cache
+D:\WHU\大二下\C#\homework10\homework10\obj\Debug\homework10.csproj.CoreCompileInputs.cache
+D:\WHU\大二下\C#\homework10\homework10\obj\Debug\homework10.exe
+D:\WHU\大二下\C#\homework10\homework10\obj\Debug\homework10.pdb
